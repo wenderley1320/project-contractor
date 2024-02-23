@@ -5,6 +5,7 @@
 /*COMPORTAMIENTO DE LA PAGINA */
 html{
   scroll-behavior: smooth;
+ 
 }
 
 /*--------------------AREA DE PROYECTO----------------- */
@@ -14,6 +15,7 @@ html{
   grid-auto-flow: row; /* Los elementos se organizarán hacia abajo en columnas */
   grid-template-rows: auto; /* Las filas se ajustarán automáticamente al contenido */
   gap: 10px;
+  background: #fff;
 }
 #header-proyecto {
   grid-column: 2 / span 9; /* Ocupa todas las columnas */
