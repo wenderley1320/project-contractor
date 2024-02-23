@@ -45,6 +45,8 @@
             <div class="btn-right"><i class='bx bx-chevron-right'></i></box-icon>
             </div>
         </div>
+        <a class="proyectos-1" href="#">Proyectos</a>
+        <img class="logo-1" src="img/logo.jpeg" alt="logo">
     </main>
 
     <script src="script/carrusel.js"></script>

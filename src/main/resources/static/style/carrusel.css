@@ -1,7 +1,7 @@
 main {
-    height: 550px;
+    height: 580px;
     display: flex;
-    align-items: center;
+    align-items: center; /* centramos los contenidos dentro del main */
     justify-content: center;
     backdrop-filter: blur(2px);
 }
@@ -15,14 +15,14 @@ main {
 }
 
 .carruseles {
-    width: 400%;/* aca le pongo 300% porque son 3 imagenes, */
+    width: 400%;/* aca le pongo 400% porque son 4 imagenes, */
     height: 100%;
     display: flex;
 
 }
 
 .slider-section {
-    width: calc(400%/4);/* entre 3 porque son 3 imagenes */
+    width: calc(400%/4);/* entre 4 porque son 4 imagenes */
     height: 100%;
 }
 
@@ -36,8 +36,8 @@ main {
 .btn-right {
     display: flex;
     position: absolute;
-    top: 50%;
-    font-size: 4.5rem;
+    top: 45%;
+    font-size: 8.5rem;
     background-color: transparent;
     border-radius: 50%;
     padding: 5px;
@@ -51,18 +51,38 @@ main {
 
 .btn-left:hover,
 .btn-right:hover {
-    background-color: #283048;
+    background-color: #b0b2b6;
     color: #fff;
 }
 
 .btn-left {
-    left: 10px;
+    left: 2%;
 }
 
 .btn-right {
-    right: 10px;
+    right: 2%;
 }
 
+/*iconos y h1*/
+
+.proyectos-1{
+    font-size: 2rem;
+    color: #fff;
+    background-color: #9F0000;
+    height: auto;
+    padding: 8px 60px;
+    border-radius: 2rem;
+    margin-top: 280px;
+    position: absolute;
+}
+
+.logo-1{
+    width: 340px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 700px;
+}
 
 @media (max-width:750px) {
     main {
@@ -72,8 +92,31 @@ main {
         align-items: center;
         justify-content: center;
         backdrop-filter: blur(2px);
-        margin-top: 185px; /* 185 para que quede al raz del menú */
+        margin-top: 95px; /* 95 para que quede al raz del menú */
         padding: 1px;
+    }
+    .logo-1{
+        width: 190px;
+        height: auto;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 480px;
+    }
+    .btn-left,
+    .btn-right {
+        display: flex;
+        position: absolute;
+        top: 45%;
+        font-size: 4.8rem;
+        background-color: transparent;
+        border-radius: 50%;
+        padding: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #ffffff81;
+        transform: translate(0, -50%);
+        transition: .5s ease;
+        user-select: none;
     }
 
 }
