@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    background: #0d363f;
+}
+.proyecto {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: row; /* Los elementos se organizarán hacia abajo en columnas */
+    grid-template-rows: auto; /* Las filas se ajustarán automáticamente al contenido */
+    gap: 10px;
+  }
+  #header-proyecto {
+    grid-column: 2 / span 9; /* Ocupa todas las columnas */
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo {
+    margin-top: 1vw;
+    width: 10%;
+  }
+  #titulo-container {
+    width: 95%;
+    background-color: #ffc300; /* Color de fondo correspondiente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    color: white;
+    font-family: Poppins, Lato, Sans serif, Arial;
+    font-size: 3.5em;
+    font-weight: 100;
+  }
+  
+  #texto-info {
+    grid-column: 3/ 11; /* Ocupa todas las columnas */
+    grid-row: 2; /* Ubica #texto-info en la segunda fila */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Poppins, Lato, Sans serif, Arial;
+  }
+  #texto-comunicacion{
+    grid-column: 3 / span 8; 
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Poppins, Lato, Sans serif, Arial;
+    color: white;
+    font-weight: lighter;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  #texto-comunicacion:hover {
+    transform: translateY(7px);
+  }
+  #comunicacion{
+    grid-column: 3 / span 8; 
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+  }
+  #primer-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+  }
+  #segundo-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    margin-left: 8.5vw;
+  }
+  #whatsapp{
+    width: 6vw;
+    height: 6vw;
+  }
+  #gmail{
+    width: 6vw;
+    height: 6vw;
+  }
+  span{
+    margin-left: 5vw;
+    color: white;
+    font-family: Poppins, Lato, Sans serif, Arial;
+    font-size: 1.5em;
+    font-weight:100;
+    font-style: italic;
+  }
+  /*--------------------AREA DE FOOTER----------------- */
+  .info-contacto{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: row; /* Los elementos se organizarán hacia abajo en columnas */
+    grid-template-rows: auto; /* Las filas se ajustarán automáticamente al contenido */
+    gap: 10px;
+    background-color: #0d363f;
+    width: 100%;
+    height: 95%;
+    margin-top: 5vw;
+  }
+footer{
+  grid-column: 3 / 8;
+  grid-row: 5;
+  grid-column-gap: 7vw;
+  display: grid;
+  justify-content: space-between;
+}
+nav{
+  grid-column: 2 / span 5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1em;
+  font-family: Poppins, Lato, Sans serif, Arial;
+  text-decoration: none;
+  color:white;
+}
+.link{
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 1vw 1vw 1vw 1vw;
+  position: relative;
+}
+.link:hover {
+  transform: translateY(-20px);
+}
+.link:hover {
+  transform: translateY(-20px);
+}
+
+ .link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s ease;
+}
+
+.link:hover::before {
+  transform: skewX(45deg) translateX(-150px);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#menu-link {
+  color:#425f66;
+  line-height: 2;
+  position: relative;
+}
+#menu-link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color:#ffc300;
+  position: absolute;
+  bottom: -.25rem;
+  left: 50%;
+  transition: width .4s, left .4s;
+}
+
+#menu-link:hover::before {
+  width: 100%;
+  left: 0;
+}
+#redes-sociales{
+  grid-column: 7/ 10;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#img-redes{
+  width:3vw;
+  height: 3vw;
+}

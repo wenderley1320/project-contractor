@@ -77,7 +77,7 @@
       <img id="foto" src="/src/main/resources/static/img/personalizado.jpeg" />
       <div id="content">
         <h3 id="subtitulo">Proyectos personalizados</h3>
-        <button id="Ver-mas">Ver mas</button>
+        <button id="Ver-mas"><a href="/src/main/webapp/WEB-INF/proyectos.jsp">Ver mas</a></button>
       </div>
     </div>
     <div id="beetween"></div>
@@ -89,7 +89,7 @@
           <li>Empresas PGC Constructora</li>
           <li>Camus Estructuras Metálicas</li>
         </ul>
-        <button id="Ver-mas">Ver mas</button>
+        <button id="Ver-mas"><a href="/src/main/webapp/WEB-INF/proyectos.jsp">Ver mas</a></button>
       </div>
     </div>
   </div>
