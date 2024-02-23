@@ -7,7 +7,7 @@ html{
   scroll-behavior: smooth;
 }
 
-/*AREA DE PROYECTO */
+/*--------------------AREA DE PROYECTO----------------- */
 .proyecto {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -39,7 +39,6 @@ h2 {
   font-size: 3.5em;
   font-weight: 100;
 }
-
 #texto-info {
   grid-column: 3/ 11; /* Ocupa todas las columnas */
   grid-row: 2; /* Ubica #texto-info en la segunda fila */
@@ -50,7 +49,6 @@ h2 {
   font-size: 1.5em;
   font-family: Poppins, Lato, Sans serif, Arial;
 }
-
 .tipos-proyectos {
   grid-column: 3/ 11; /* Ocupa todas las columnas */
   grid-row: 3; /* Ubica #texto-info en la segunda fila */
@@ -64,7 +62,6 @@ h2 {
   height: 35vw;
   box-shadow: 0px 0.3vw 0.5vw black;
 }
-
 #personalizado {
   position: relative;
   display: flex;
@@ -120,6 +117,7 @@ li {
   font-family: Poppins, Lato, Sans serif, Arial;
   color: white;
 }
+/*--------------------BOTON VER MAS Y HOVER----------------- */
 #Ver-mas {
   position: absolute;
   display: flex;
@@ -128,7 +126,7 @@ li {
   bottom: 10vw;
   width: 50%;
   border-radius: 5vw;
-  background-color: 9F0000;
+  background-color: #9F0000;
   color: white;
   font-family: Poppins, Lato, Sans serif, Arial;
   font-size: 1em;
@@ -151,6 +149,7 @@ li {
 #Ver-mas:active {
   transform: translateY(-1px);
 }
+/*--------------------BOTON CONTACTO Y HOVER----------------- */
 #contacto {
   grid-column: 6/ 8; /* Ocupa todas las columnas */
   grid-row: 4; /* Ubica #texto-info en la segunda fila */
@@ -159,7 +158,7 @@ li {
   align-items: center;
   padding: 0.8vw;
   border-radius: 5vw;
-  background-color: 9F0000;
+  background-color: #9F0000;
   color: white;
   font-family: Poppins, Lato, Sans serif, Arial;
   font-size: 1em;
@@ -172,7 +171,7 @@ li {
   outline: none;
 }
 #contacto:hover {
-  background-color: 9F0000;
+  background-color: #9F0000;
   box-shadow: 0px 10px 15px rgb(119, 113, 113);
   color: #fff;
   transform: translateY(-7px);
@@ -181,6 +180,7 @@ li {
 #contacto:active {
   transform: translateY(-1px);
 }
+/*--------------------AREA DE STATS----------------- */
 .container-stats {
   grid-column: 2/ 12; /* Ocupa todas las columnas */
   grid-row: 5; /* Ubica #texto-info en la segunda fila */
@@ -318,7 +318,7 @@ span{
   font-size: 1.5em;
   font-weight:100;
   font-style: italic;
-
+/*--------------------AREA DE FOOTER----------------- */
 }
 footer{
   grid-column: 3 / 8;
@@ -360,7 +360,6 @@ nav{
   background-color: rgba(255, 255, 255, 0.5);
   transform: skewX(45deg) translateX(150px);
   transition: 0.5s ease;
-
 }
 
 .link:hover::before {
@@ -402,7 +401,8 @@ a{
   height: 3vw;
 }
 
-/*media queries*/
+/*--------------------MEDIA QUERIES----------------- */
+
 /*dispositivos moviles*/
 @media only screen and (max-width: 767px) {
   .proyecto {
@@ -461,9 +461,8 @@ a{
     height: 100%;
     box-shadow: 0px 0.3vw 0.5vw black;
   }
-
   #personalizado {
-    display: none;
+    display: none; /*--------------------QUE NO SE VISUALICE CUANDO LLEGA A ESE TAMAÑO DETERMINADO----------------- */
   }
   #beetween {
     display: none;
@@ -575,7 +574,6 @@ a{
     grid-template-rows: auto; /* Las filas se ajustarán automáticamente al contenido */
     background-color: #0d363f;
   }
-  
   #texto-comunicacion{
     grid-column: 1 / span 3;
     grid-row: 2;
@@ -657,16 +655,13 @@ a{
     background-color: rgba(255, 255, 255, 0.5);
     transform: skewX(45deg) translateX(150px);
     transition: 0.5s ease;
-  
   }
-  
   .link:hover::before {
     transform: skewX(45deg) translateX(-150px);
   }
   a{
     text-decoration: none;
   }
-  
   #menu-link {
     color:#425f66;
     line-height: 2;
@@ -683,7 +678,6 @@ a{
     left: 50%;
     transition: width .4s, left .4s;
   }
-  
   #menu-link:hover::before {
     width: 100%;
     left: 0;
