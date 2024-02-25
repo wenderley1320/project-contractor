@@ -84,7 +84,7 @@ main {
     margin-top: 620px;
 }
 
-@media (max-width:750px) {
+@media (max-width:767px) {
     main {
         height: 450px;
         width: auto;
