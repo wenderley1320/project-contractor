@@ -91,17 +91,14 @@ html{
     transition: .5s ease;
     user-select: none;
 }
-
 .btn-left:hover,
 .btn-right:hover {
     background-color: #b0b2b6;
     color: #fff;
 }
-
 .btn-left {
-    left: 2%;
+    left: 0vw;
 }
-
 .btn-right {
     right: 2%;
 }
@@ -268,40 +265,155 @@ a{
 }
  /*--------------------MEDIA QUERIES----------------- */
      /*---------PARA DISPOSITIVOS MOVILES-------- */
+@media only screen and (max-width: 767px){
+  #titulo-container {
+    height: 15vw;
+  }
+  h2 {
+    font-size: 3em;
+    margin-top: 2vw;
+  }
+  #texto-info {
+    margin: 4.5vw;
+    font-size: 1.5em;
+  }
+  /*--------------------AREA DE CARRUSEL----------------- */
+  .container-carousel {
+    width:70vw;
+    height: 80vw;
+}
+.carruseles {
+    width: 600%;/* aca le pongo 400% porque son 4 imagenes, */
+    display: flex;
+}
+/*--------------------AREA CONTACTO Y TEXTO----------------- */
+.info-contacto{
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2vw;
+ }
+  #texto-comunicacion{
+    grid-column: 1/ span 6; 
+    margin-left: 2vw;
+    margin-top: 2vw;
+  }
+  #comunicacion{
+    grid-column: 1 / span 3; 
+    grid-row: 2;
+    margin:3vw;
+   }
+  #primer-contacto{
+    margin: 0vw;
+    margin-right: 20vw;
+  }
+  #segundo-contacto{
+    margin-left: -5.6vw;
+  }
+  .logo{
+    padding: 0vw;
+    grid-column: 1/ span 3;
+    grid-row: 3;
+    margin: -2vw;
+  }
+  #img-logo{
+    margin-right: 5vw;
+  }
+  /*--------------------AREA FOOTER----------------- */
+  footer{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  nav{
+   display: none;
+  }
+  
+  #redes-sociales{
+    grid-column: 1/ span 3;
+    justify-content: center;
+    margin-top: 8vw;
+    margin-left: -5vw;
+  }
+  #img-redes{
+    margin: 2vw;
+  }
+}
+ /*--------------------MEDIA QUERIES----------------- */
+            /*---------PARA TABLETS-------- */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
 
-@media (max-width:750px) {
-    main {
-        height: 450px;
-        width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(2px);
-        margin-top: 95px; /* 95 para que quede al raz del menú */
-        padding: 1px;
-    }
-    .logo-1{
-        width: 190px;
-        height: auto;
-        border-radius: 50%;
-        position: absolute;
-        margin-top: 480px;
-    }
-    .btn-left,
-    .btn-right {
-        display: flex;
-        position: absolute;
-        top: 45%;
-        font-size: 4.8rem;
-        background-color: transparent;
-        border-radius: 50%;
-        padding: 5px;
-        font-weight: 600;
-        cursor: pointer;
-        color: #ffffff81;
-        transform: translate(0, -50%);
-        transition: .5s ease;
-        user-select: none;
-    }
+  #titulo-container {
+    height: 10vw;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  #texto-info {
+    margin: 4.5vw;
+    font-size: 1.5em;
+  }
+  /*--------------------AREA DE CARRUSEL----------------- */
+.container-carousel {
+    width:50vw;
+    height: 60vw;
+}
+.carruseles {
+    width: 600%;/* aca le pongo 400% porque son 4 imagenes, */
+    display: flex;
 
+}
+ /*--------------------AREA CONTACTO Y TEXTO----------------- */
+ .info-contacto{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  width: 100%;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+ }
+  #texto-comunicacion{
+    grid-column: 1/ span 6; 
+    grid-row: 1;
+    margin: 5vw;
+  }
+  #comunicacion{
+    grid-column: 3 / span 4; 
+    grid-row: 2;
+  }
+  #primer-contacto{
+    margin: 5vw;
+    margin-right: 23vw;
+  }
+  #segundo-contacto{
+    margin-left: -3.5vw;
+  }
+  span{
+    font-size: 1.3em;
+  }
+  .logo{
+    padding: 0vw;
+    grid-column: 1/ span 2;
+  }
+  #img-logo{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 20vw;
+    margin-left: 8vw;
+  }
+ /*--------------------AREA DE FOOTER----------------- */
+ footer{
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  margin-bottom: 0vw;
+}
+nav{
+  display: none;
+}
+#redes-sociales{
+  grid-column: 2/ span 4;
+  justify-content: center;
+  grid-row: 20;
+
+}
+#img-redes{
+  margin: 2vw;
+}
 }

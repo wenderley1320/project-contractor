@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/src/main/resources/static/style/proyectos.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <title>Nuestros-proyectos</title>
 </head>
 
@@ -19,7 +21,8 @@
   <p id="texto-info">
     Observa como hemos trabajado en otros proyectos segun nuestras
     especializaciones.
-  </p>
+  </p> 
+   <!------------------------------ CARRUSEL SECCION-------------------------->
   <main>
     <div class="container-carousel">
       <div class="carruseles" id="slider">
@@ -47,9 +50,9 @@
       </div>
     </div>
   </main>
-  <!------------------------------ CARRUSEL SECCION-------------------------->
 
 
+ <!------------------------------ CONTACTO SECCION-------------------------->
 
   <div class="info-contacto">
     <div id="texto-comunicacion">
@@ -74,7 +77,7 @@
       </div> 
     </div>
     <div class="logo">
-        <img id="img-logo" src="/src/main/resources/static/img/logo.jpeg" />
+       <a href="./index.jsp"> <img id="img-logo" src="/src/main/resources/static/img/logo.jpeg" /></a>
     </div>
   </div>
   <!------------------------------ FOOTER SECCION-------------------------->
