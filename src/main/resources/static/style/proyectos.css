@@ -325,7 +325,6 @@ a{
   nav{
    display: none;
   }
-  
   #redes-sociales{
     grid-column: 1/ span 3;
     justify-content: center;
